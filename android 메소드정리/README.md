@@ -87,4 +87,14 @@ startActivity(mIntent);
 변수명.getText().toString() // String으로 가져오기
 ```
 
+##### Linear layout에서 요소들 수직배치
+```
+android:orientation="vertical"
+```
+
+##### 변수가 비었는지 확인
+```
+변수명.isEmpty()
+```
+
 
