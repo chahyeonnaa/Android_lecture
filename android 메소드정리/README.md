@@ -92,6 +92,7 @@ startActivity(mIntent);
 android:orientation="vertical"
 ```
 
+
 ##### 변수가 비었는지 확인
 ```
 변수명.isEmpty()
