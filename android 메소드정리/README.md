@@ -93,7 +93,7 @@ android:orientation="vertical"
 ```
 
 
-##### 변수가 비었는지 확인
+##### 변수가 비었는지 확인 - 자바 메서드
 ```
 변수명.isEmpty()
 ```
