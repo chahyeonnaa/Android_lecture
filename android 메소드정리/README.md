@@ -98,4 +98,56 @@ android:orientation="vertical"
 변수명.isEmpty()
 ```
 
+##### MainActivity에서 글자크기 지정하기
+```
+변수명.setTextSize(20);
+```
 
+##### CheckBox 선택 시 호출하는 리스너
+```
+변수명.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton compoundButton, boolean b) {
+
+        });
+```
+
+##### 라디오 그룹 스위치문
+```
+  switch (rGroup1.getCheckedRadioButtonId()){
+                    case 라디오버튼 변수:
+                        // 해당버튼 클릭 시 일어나게할 동작
+                        break;
+                    default:
+                }
+```
+
+##### 해당 변수에 이미지 세팅
+```
+변수명.setImageResource(R.drawable.이미지 파일명);
+```
+
+##### 텍스트 뷰에서 출력할 텍스트 설정
+```
+변수명.setText();
+```
+
+##### 프로그램 종료
+```
+finish();
+```
+
+##### Switch 움직이면 동작하는 리스너
+```
+     변수명.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton compoundButton, boolean b) {
+              
+            }
+        });
+```
+
+##### 체크, 선택할 수 있는 모든 것들 미선택 상태로 설정
+```
+변수명.setChecked(false);
+```
