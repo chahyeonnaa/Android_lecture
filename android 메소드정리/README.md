@@ -151,3 +151,57 @@ finish();
 ```
 변수명.setChecked(false);
 ```
+
+##### padding - XML코드 
+```
+<LinearLayout>
+android:padding="30dp"
+<Button></Button> 
+</LinearLayout>
+// 상하좌우에 모두 지정하는 속성, 각각 따로 지정하고싶으면 paddingTop,paddingBottom,paddingLeft,paddingRight 이용
+// 버튼에 지정하면, 버튼 내의 글자가 버튼의 경계선에서 일정 간격 떨어져서 표현됨
+// 전체 틀에 패딩 속성을 부여해주면, 모든 위젯이 함께 움직인다.
+```
+
+##### layout_margin - XML코드
+```
+android:layout_margin="" // 주위 다른 위젯사이의 간격 조정, 각 위젯의 속성으로 지정해야함
+```
+
+##### enabled, clickable - XML코드
+```
+android:enabled="false" // 위젯의 동작 여부
+android:clickable="false" // 클릭이나 터치가 가능하게함
+```
+
+##### rotation - XML코드
+```
+android:rotation="45" // 위젯을 회전시켜서 출력
+```
+
+##### text 속성 - XML코드
+```
+android:textface="" // 글꼴
+```
+
+##### ImageView - XML코드
+```
+android:layout_width="" // 사진 크기 지정
+android:layout_height=""
+```
+
+##### HorizontalScrollView - 수평 스크롤뷰
+```
+  <HorizontalScrollView // 하나의 뷰만 포함할 수 있음, 여러 이미지를 넣고싶은 경우 하나의 LinearLayout안에 넣어야함
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        </HorizontalScrollView>
+```
+
+##### ScrollView - 수직 스크롤뷰
+```
+  <ScrollView // 하나의 뷰만 포함할 수 있음, 여러 이미지를 넣고싶은 경우 하나의 LinearLayout안에 넣어야함
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        </lScrollView>
+```
