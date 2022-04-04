@@ -205,3 +205,20 @@ android:layout_height=""
         android:layout_height="wrap_content"
         </lScrollView>
 ```
+
+##### XML 파일 없이 화면 코딩하기 - LinearLayout 코드
+```
+        LinearLayout.LayoutParams params= new LinearLayout.LayoutParams
+                (LinearLayout.LayoutParams.MATCH_PARENT, LinearLayout.LayoutParams.MATCH_PARENT);
+        LinearLayout baseLayout= new LinearLayout(this);
+        baseLayout.setOrientation(LinearLayout.VERTICAL);
+        setContentView(baseLayout,params);
+```
+
+##### XML 파일 없이 화면 코딩하기 - 다른 요소들도 이런 형태로 하면 된다.
+```
+   Button btn=new Button(this); // 버튼 변수 생성
+   btn.setText("버튼입니다");
+   btn.setBackgroundColor(Color.MAGENTA);
+   baseLayout.addView(btn); // 버튼을 레이아웃에 출력
+```
