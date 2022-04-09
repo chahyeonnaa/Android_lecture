@@ -235,7 +235,7 @@ android:layout_height=""
         app:layout_constraintGuide_begin="500dp" />
 ```
 
-##### layout_constraint<S1>_to<S2>Of 
+##### layout_constraint\<S1\>_to\<S2\>Of 
 - 해당 속성을 사용하는 위젯의  S1 사이드 부분을 타겟 위젯의 S2 사이드에 Constraint 한다 
 - start(left),end(right),top,bottom
 - parent는 상하좌우 사이드 벽을 의미
@@ -245,7 +245,7 @@ app:layout_constraintBottom_toTopOf="@+id/guideline2"
 app:layout_constraintEnd_toStartOf="@+id/button2"
 ```
 
-##### android:layout_<width,height>="0dp"
+##### android:layout_\<width,height\>="0dp"
 - 사용 가능한 공간을 최대로 할당
 
 ##### android:layout_gravity vs android:gravity
