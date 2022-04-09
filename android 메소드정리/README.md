@@ -222,3 +222,51 @@ android:layout_height=""
    btn.setBackgroundColor(Color.MAGENTA);
    baseLayout.addView(btn); // 버튼을 레이아웃에 출력
 ```
+
+##### ConstraintLayout Guidelines 사용하기
+- 뷰를 배치하기 위해 뷰그룹 내에 설정할 수 있는 일종의 기준선  
+- layout_constraintGuide_begin: 세로 가이드라인이라면 왼쪽(start)에서부터 얼만큼 떨어져있는지, 가로 가이드라인이라면 위에서부터 얼만큼 떨어져있는지를 뜻한다
+```
+ <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="500dp" />
+```
+
+##### layout_constraint<S1>_to<S2>Of 
+- 해당 속성을 사용하는 위젯의  S1 사이드 부분을 타겟 위젯의 S2 사이드에 Constraint 한다 
+- start(left),end(right),top,bottom
+- parent는 상하좌우 사이드 벽을 의미
+```
+// 해당 버튼의 Bottom을 guideline2의 위쪽에 위치시킨다.
+app:layout_constraintBottom_toTopOf="@+id/guideline2"
+app:layout_constraintEnd_toStartOf="@+id/button2"
+```
+
+##### android:layout_<width,height>="0dp"
+- 사용 가능한 공간을 최대로 할당
+
+##### android:layout_gravity vs android:gravity
+- layout_gravity : 자신을 포함하고 있는 부모 위젯 레이아웃에서 옵션값에 따라 정렬(레이아웃 내 뷰 내에서 사용)
+- gravity : 자신의 뷰에서 포함하고 있는 데이터를 정렬(부모가 없는 레이아웃 틀에서 사용)
+
+##### 버튼 뷰에서 버튼 모양 다듬기
+```
+android:background="@drawable/button1"
+- drawble 하위 파일(button.xml)
+<shape android:shape="rectangle"> //shape : 모양을 결정할 때 사용한다. rectangle, line, oval, ring 이 있다.
+
+<solid android:color="#ffffff" /> // solid : 모양에 색상을 넣을 때 사용한다.
+
+// stroke : 테두리를 적용하고 싶을 때 사용한다. width 속성을 사용해서 두께를 결정하고, color 속성을 사용해서 테두리 색상을 정한다.
+<stroke android:width="2dp" android:color="#ff5722" 
+
+<corners android:radius="10dp" /> // 둥근 모서리를 적용하고 싶을 때 사용한다. 값에 따라 둥근 모서리를 주는 정도를 조절할 수 있다.
+</shape>
+```
+
+
+
+
