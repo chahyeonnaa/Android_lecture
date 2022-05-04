@@ -13,77 +13,122 @@
         android:text="2020039009_차현아"
         android:textSize="24sp" />
 
-    <TableRow android:layout_width="match_parent"
-        android:layout_height="match_parent" >
-        <TextView android:id="@+id/tv1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
-        <RatingBar android:id="@+id/rBar1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
+    <TableRow>
+        <TextView
+            android:id="@+id/tvTop"
+            android:layout_gravity="center"
+            android:layout_span="2"
+            android:text="우승 그림 : "
+            android:textSize="15dp" />
     </TableRow>
-    <TableRow android:layout_width="match_parent"
+
+    <TableRow>
+        <ImageView
+            android:id="@+id/ivTop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_span="2"
+            android:scaleType="fitCenter"
+            android:src="@drawable/pic1" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
         android:layout_height="match_parent" >
-        <TextView android:id="@+id/tv2"
+        <TextView
+            android:id="@+id/tv1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
-        <RatingBar android:id="@+id/rBar2"
+        <RatingBar
+            android:id="@+id/rBar1"
             android:layout_width="wrap_content"
+            style="?android:attr/ratingBarStyleSmall"
             android:layout_height="wrap_content" />
     </TableRow>
     <TableRow
         android:layout_width="match_parent"
         android:layout_height="match_parent" >
-        <TextView android:id="@+id/tv3"
+        <TextView
+            android:id="@+id/tv2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
-        <RatingBar android:id="@+id/rBar3"
+        <RatingBar
+            android:id="@+id/rBar2"
             android:layout_width="wrap_content"
+            style="?android:attr/ratingBarStyleSmall"
             android:layout_height="wrap_content" />
     </TableRow>
-    <TableRow android:layout_width="match_parent"
+    <TableRow
+        android:layout_width="match_parent"
         android:layout_height="match_parent" >
-        <TextView android:id="@+id/tv4"
+        <TextView
+            android:id="@+id/tv3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
-        <RatingBar android:id="@+id/rBar4"
+        <RatingBar
+            android:id="@+id/rBar3"
             android:layout_width="wrap_content"
+            style="?android:attr/ratingBarStyleSmall"
+            android:layout_height="wrap_content" />
+    </TableRow>
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+        <TextView
+            android:id="@+id/tv4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <RatingBar
+            android:id="@+id/rBar4"
+            android:layout_width="wrap_content"
+            style="?android:attr/ratingBarStyleSmall"
             android:layout_height="wrap_content" />
     </TableRow>
 
-    <TableRow android:layout_width="match_parent"
+    <TableRow
+        android:layout_width="match_parent"
         android:layout_height="match_parent" >
-        <TextView android:id="@+id/tv5"
+        <TextView
+            android:id="@+id/tv5"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
         <RatingBar
             android:id="@+id/rBar5"
             android:layout_width="wrap_content"
+            style="?android:attr/ratingBarStyleSmall"
             android:layout_height="wrap_content" />
     </TableRow>
 
-    <TableRow android:layout_width="match_parent"
+    <TableRow
+        android:layout_width="match_parent"
         android:layout_height="match_parent" >
-        <TextView android:id="@+id/tv6"
+        <TextView
+            android:id="@+id/tv6"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
         <RatingBar
             android:id="@+id/rBar6"
             android:layout_width="wrap_content"
+            style="?android:attr/ratingBarStyleSmall"
             android:layout_height="wrap_content" />
     </TableRow>
     <TableRow
         android:layout_width="match_parent"
         android:layout_height="match_parent" >
-        <TextView android:id="@+id/tv7"
+        <TextView
+            android:id="@+id/tv7"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
-        <RatingBar android:id="@+id/rBar7"
+        <RatingBar
+            android:id="@+id/rBar7"
             android:layout_width="wrap_content"
+            style="?android:attr/ratingBarStyleSmall"
             android:layout_height="wrap_content" />
     </TableRow>
 
-    <TableRow android:layout_width="match_parent"
+    <TableRow
+        android:layout_width="match_parent"
         android:layout_height="match_parent" >
         <TextView
             android:id="@+id/tv8"
@@ -92,6 +137,7 @@
         <RatingBar
             android:id="@+id/rBar8"
             android:layout_width="wrap_content"
+            style="?android:attr/ratingBarStyleSmall"
             android:layout_height="wrap_content" />
     </TableRow>
     <TableRow
@@ -104,6 +150,7 @@
         <RatingBar
             android:id="@+id/rBar9"
             android:layout_width="wrap_content"
+            style="?android:attr/ratingBarStyleSmall"
             android:layout_height="wrap_content" />
     </TableRow>
     <TableRow
